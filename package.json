@@ -1,0 +1,20 @@
+{
+  "name": "sb-electronics-website",
+  "version": "1.0.0",
+  "description": "SB Electronics - PCB Manufacturing Company Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "pcb",
+    "electronics",
+    "manufacturing",
+    "website"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
