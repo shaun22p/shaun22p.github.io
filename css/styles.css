@@ -46,12 +46,23 @@ a {
     max-width: 700px;
     margin: 0 auto;
 }
-
+.hero-text {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+}
 .bg-light {
-    background-color: #f8f9fa !important;
+    background-color: #E8E8E8 !important;
 }
 .bg-white {
     background-color: white !important;
+}
+.bg-green {
+    background-color: darkgreen !important;
+}
+.text-light {
+    color: #adb5bd !important;
 }
 
 /* Header/Navigation */
@@ -71,6 +82,11 @@ a {
     letter-spacing: 1px;
     color: var(--primary-dark);
 }
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
 .navbar-toggler {
     background-color: var(--primary-dark);
 }
@@ -80,6 +96,35 @@ a {
     position: relative;
     color: var(--primary-dark);
 }
+.services-image-container {
+    aspect-ratio: 16 / 10;           /* Maintains a 16:9 ratio */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    width: 100%;
+}
+
+.services-single-layer {
+    background-image: url('/images/single.png');
+}
+.services-double-layer {
+    background-image: url('/images/double.jpg');
+}
+.services-multi-layer {
+    background-image: url('/images/multilayer.jpg');
+}
+.services-flexible {
+    background-image: url('/images/flexible.jpg');
+}
+.services-stencil {
+    background-image: url('/images/stencil.webp');
+}
+.services-cadcam {
+    background-image: url('/images/cadcam.png');
+}
+
 .nav-link.active {
     color: var(--primary-dark) !important;
 }
@@ -104,25 +149,19 @@ a {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    /* background: linear-gradient(135deg, var(--primary-dark), var(--primary)); */
     min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
+    background-image: url('/images/pcb55.jpeg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/circuit-pattern.svg');
-    background-size: cover;
-    opacity: 0.1;
-}
 
 /* About Section */
 .icon-box {
